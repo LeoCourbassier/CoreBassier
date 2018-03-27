@@ -1,0 +1,402 @@
+// Copyright (C) 2017  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "03/20/2018 14:15:28"
+                                                                                
+// Verilog Test Bench (with test vectors) for design :                          ALU
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module ALU_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg [31:0] dataA;
+reg [31:0] dataB;
+reg [4:0] opCode;
+// wires                                               
+wire [31:0] dataC;
+wire error;
+wire overflow;
+wire zero;
+
+// assign statements (if any)                          
+ALU i1 (
+// port map - connection between master ports and signals/registers   
+	.dataA(dataA),
+	.dataB(dataB),
+	.dataC(dataC),
+	.error(error),
+	.opCode(opCode),
+	.overflow(overflow),
+	.zero(zero)
+);
+initial 
+begin 
+#1000000 $stop;
+end 
+// dataA[ 31 ]
+initial
+begin
+	dataA[31] = 1'b0;
+end 
+// dataA[ 30 ]
+initial
+begin
+	dataA[30] = 1'b0;
+end 
+// dataA[ 29 ]
+initial
+begin
+	dataA[29] = 1'b0;
+end 
+// dataA[ 28 ]
+initial
+begin
+	dataA[28] = 1'b0;
+end 
+// dataA[ 27 ]
+initial
+begin
+	dataA[27] = 1'b0;
+end 
+// dataA[ 26 ]
+initial
+begin
+	dataA[26] = 1'b0;
+end 
+// dataA[ 25 ]
+initial
+begin
+	dataA[25] = 1'b0;
+end 
+// dataA[ 24 ]
+initial
+begin
+	dataA[24] = 1'b0;
+end 
+// dataA[ 23 ]
+initial
+begin
+	dataA[23] = 1'b0;
+end 
+// dataA[ 22 ]
+initial
+begin
+	dataA[22] = 1'b0;
+end 
+// dataA[ 21 ]
+initial
+begin
+	dataA[21] = 1'b0;
+end 
+// dataA[ 20 ]
+initial
+begin
+	dataA[20] = 1'b0;
+end 
+// dataA[ 19 ]
+initial
+begin
+	dataA[19] = 1'b0;
+end 
+// dataA[ 18 ]
+initial
+begin
+	dataA[18] = 1'b0;
+end 
+// dataA[ 17 ]
+initial
+begin
+	dataA[17] = 1'b0;
+end 
+// dataA[ 16 ]
+initial
+begin
+	dataA[16] = 1'b0;
+end 
+// dataA[ 15 ]
+initial
+begin
+	dataA[15] = 1'b0;
+end 
+// dataA[ 14 ]
+initial
+begin
+	dataA[14] = 1'b0;
+end 
+// dataA[ 13 ]
+initial
+begin
+	dataA[13] = 1'b0;
+end 
+// dataA[ 12 ]
+initial
+begin
+	dataA[12] = 1'b0;
+end 
+// dataA[ 11 ]
+initial
+begin
+	dataA[11] = 1'b0;
+end 
+// dataA[ 10 ]
+initial
+begin
+	dataA[10] = 1'b0;
+end 
+// dataA[ 9 ]
+initial
+begin
+	dataA[9] = 1'b0;
+end 
+// dataA[ 8 ]
+initial
+begin
+	dataA[8] = 1'b0;
+end 
+// dataA[ 7 ]
+initial
+begin
+	dataA[7] = 1'b0;
+end 
+// dataA[ 6 ]
+initial
+begin
+	dataA[6] = 1'b0;
+end 
+// dataA[ 5 ]
+initial
+begin
+	dataA[5] = 1'b0;
+end 
+// dataA[ 4 ]
+initial
+begin
+	dataA[4] = 1'b0;
+end 
+// dataA[ 3 ]
+initial
+begin
+	dataA[3] = 1'b0;
+end 
+// dataA[ 2 ]
+initial
+begin
+	dataA[2] = 1'b0;
+end 
+// dataA[ 1 ]
+initial
+begin
+	dataA[1] = 1'b0;
+end 
+// dataA[ 0 ]
+initial
+begin
+	dataA[0] = 1'b1;
+end 
+// dataB[ 31 ]
+initial
+begin
+	dataB[31] = 1'b0;
+end 
+// dataB[ 30 ]
+initial
+begin
+	dataB[30] = 1'b0;
+end 
+// dataB[ 29 ]
+initial
+begin
+	dataB[29] = 1'b0;
+end 
+// dataB[ 28 ]
+initial
+begin
+	dataB[28] = 1'b0;
+end 
+// dataB[ 27 ]
+initial
+begin
+	dataB[27] = 1'b0;
+end 
+// dataB[ 26 ]
+initial
+begin
+	dataB[26] = 1'b0;
+end 
+// dataB[ 25 ]
+initial
+begin
+	dataB[25] = 1'b0;
+end 
+// dataB[ 24 ]
+initial
+begin
+	dataB[24] = 1'b0;
+end 
+// dataB[ 23 ]
+initial
+begin
+	dataB[23] = 1'b0;
+end 
+// dataB[ 22 ]
+initial
+begin
+	dataB[22] = 1'b0;
+end 
+// dataB[ 21 ]
+initial
+begin
+	dataB[21] = 1'b0;
+end 
+// dataB[ 20 ]
+initial
+begin
+	dataB[20] = 1'b0;
+end 
+// dataB[ 19 ]
+initial
+begin
+	dataB[19] = 1'b0;
+end 
+// dataB[ 18 ]
+initial
+begin
+	dataB[18] = 1'b0;
+end 
+// dataB[ 17 ]
+initial
+begin
+	dataB[17] = 1'b0;
+end 
+// dataB[ 16 ]
+initial
+begin
+	dataB[16] = 1'b0;
+end 
+// dataB[ 15 ]
+initial
+begin
+	dataB[15] = 1'b0;
+end 
+// dataB[ 14 ]
+initial
+begin
+	dataB[14] = 1'b0;
+end 
+// dataB[ 13 ]
+initial
+begin
+	dataB[13] = 1'b0;
+end 
+// dataB[ 12 ]
+initial
+begin
+	dataB[12] = 1'b0;
+end 
+// dataB[ 11 ]
+initial
+begin
+	dataB[11] = 1'b0;
+end 
+// dataB[ 10 ]
+initial
+begin
+	dataB[10] = 1'b0;
+end 
+// dataB[ 9 ]
+initial
+begin
+	dataB[9] = 1'b0;
+end 
+// dataB[ 8 ]
+initial
+begin
+	dataB[8] = 1'b0;
+end 
+// dataB[ 7 ]
+initial
+begin
+	dataB[7] = 1'b0;
+end 
+// dataB[ 6 ]
+initial
+begin
+	dataB[6] = 1'b0;
+end 
+// dataB[ 5 ]
+initial
+begin
+	dataB[5] = 1'b0;
+end 
+// dataB[ 4 ]
+initial
+begin
+	dataB[4] = 1'b0;
+end 
+// dataB[ 3 ]
+initial
+begin
+	dataB[3] = 1'b0;
+end 
+// dataB[ 2 ]
+initial
+begin
+	dataB[2] = 1'b0;
+end 
+// dataB[ 1 ]
+initial
+begin
+	dataB[1] = 1'b0;
+end 
+// dataB[ 0 ]
+initial
+begin
+	dataB[0] = 1'b0;
+end 
+// opCode[ 4 ]
+initial
+begin
+	opCode[4] = 1'b1;
+end 
+// opCode[ 3 ]
+initial
+begin
+	opCode[3] = 1'b0;
+end 
+// opCode[ 2 ]
+initial
+begin
+	opCode[2] = 1'b0;
+end 
+// opCode[ 1 ]
+initial
+begin
+	opCode[1] = 1'b1;
+end 
+// opCode[ 0 ]
+initial
+begin
+	opCode[0] = 1'b0;
+end 
+endmodule
+

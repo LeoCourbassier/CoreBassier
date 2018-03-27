@@ -1,0 +1,75 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/leonardo/Documents/college/Lab AOC/CoreBassier/simulation/qsim
+vALU
+Z1 !s110 1521566955
+!i10b 1
+!s100 D?UQ01RH1K2QPKdlz@z>K2
+IL`8fZHTZ5LTUAfW0N_>:?3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1521566954
+Z4 8main.vo
+Z5 Fmain.vo
+L0 31
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1521566955.000000
+Z8 !s107 main.vo|
+Z9 !s90 -work|work|main.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+n@a@l@u
+vALU_vlg_vec_tst
+R1
+!i10b 1
+!s100 =4h66e<QWVHVWcZjf^fI>2
+IbTS7D@kZ@4i@dl<N3o:mD0
+R2
+R0
+w1521566952
+8ALU/Waveform.vwf.vt
+FALU/Waveform.vwf.vt
+L0 29
+R6
+r1
+!s85 0
+31
+R7
+!s107 ALU/Waveform.vwf.vt|
+!s90 -work|work|ALU/Waveform.vwf.vt|
+!i113 1
+R10
+R11
+n@a@l@u_vlg_vec_tst
+vhard_block
+R1
+!i10b 1
+!s100 <OaX7dcnKP5lR_2g3=bL>2
+IPHYj^`zjFWJSPQIR=_^mV2
+R2
+R0
+R3
+R4
+R5
+L0 64713
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
