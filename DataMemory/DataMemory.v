@@ -1,5 +1,5 @@
 module DataMemory
-#(parameter DATA_WIDTH=31, parameter ADDR_WIDTH=5)
+#(parameter DATA_WIDTH=32, parameter ADDR_WIDTH=10)
 (
 	input [(DATA_WIDTH-1):0] data,
 	input [(ADDR_WIDTH-1):0] read_addr, write_addr,

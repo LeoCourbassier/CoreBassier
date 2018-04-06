@@ -1,5 +1,5 @@
 Flow report for main
-Tue Mar 20 14:34:55 2018
+Thu Mar 29 13:41:39 2018
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -40,19 +40,19 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Tue Mar 20 14:34:55 2018       ;
+; Flow Status                        ; Successful - Thu Mar 29 13:41:39 2018       ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; main                                        ;
-; Top-level Entity Name              ; ALU                                         ;
+; Top-level Entity Name              ; DataMemory                                  ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 3,136 / 6,272 ( 50 % )                      ;
-;     Total combinational functions  ; 3,136 / 6,272 ( 50 % )                      ;
+; Total logic elements               ; 0 / 6,272 ( 0 % )                           ;
+;     Total combinational functions  ; 0 / 6,272 ( 0 % )                           ;
 ;     Dedicated logic registers      ; 0 / 6,272 ( 0 % )                           ;
 ; Total registers                    ; 0                                           ;
-; Total pins                         ; 104 / 180 ( 58 % )                          ;
+; Total pins                         ; 86 / 180 ( 48 % )                           ;
 ; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 0 / 276,480 ( 0 % )                         ;
-; Embedded Multiplier 9-bit elements ; 8 / 30 ( 27 % )                             ;
+; Total memory bits                  ; 32,768 / 276,480 ( 12 % )                   ;
+; Embedded Multiplier 9-bit elements ; 0 / 30 ( 0 % )                              ;
 ; Total PLLs                         ; 0 / 2 ( 0 % )                               ;
 ; Device                             ; EP4CE6F17C6                                 ;
 ; Timing Models                      ; Final                                       ;
@@ -64,7 +64,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 03/20/2018 14:33:42 ;
+; Start date & time ; 03/29/2018 13:41:13 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; main                ;
 +-------------------+---------------------+
@@ -75,17 +75,17 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 264390070026041.152156722205991        ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 189895490717470.152234167302735        ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                            ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)              ; <None>        ; --          ; --             ;
 ; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --          ; eda_simulation ;
 ; NUM_PARALLEL_PROCESSORS             ; All                                    ; --            ; --          ; --             ;
-; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; ALU         ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; ALU         ; Top            ;
-; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; ALU         ; Top            ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; DataMemory  ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; DataMemory  ; Top            ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; DataMemory  ; Top            ;
 ; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --          ; --             ;
 ; SMART_RECOMPILE                     ; On                                     ; Off           ; --          ; --             ;
-; TOP_LEVEL_ENTITY                    ; ALU                                    ; main          ; --          ; --             ;
+; TOP_LEVEL_ENTITY                    ; DataMemory                             ; main          ; --          ; --             ;
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
 
 
@@ -94,12 +94,12 @@ refer to the applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:33     ; 1.0                     ; 960 MB              ; 00:00:56                           ;
-; Fitter                    ; 00:00:28     ; 1.0                     ; 1270 MB             ; 00:00:37                           ;
-; Assembler                 ; 00:00:01     ; 1.0                     ; 815 MB              ; 00:00:01                           ;
-; TimeQuest Timing Analyzer ; 00:00:03     ; 1.1                     ; 837 MB              ; 00:00:03                           ;
-; EDA Netlist Writer        ; 00:00:04     ; 1.0                     ; 1083 MB             ; 00:00:04                           ;
-; Total                     ; 00:01:09     ; --                      ; --                  ; 00:01:41                           ;
+; Analysis & Synthesis      ; 00:00:15     ; 1.0                     ; 928 MB              ; 00:00:38                           ;
+; Fitter                    ; 00:00:05     ; 1.0                     ; 1228 MB             ; 00:00:05                           ;
+; Assembler                 ; 00:00:01     ; 1.0                     ; 809 MB              ; 00:00:01                           ;
+; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 809 MB              ; 00:00:02                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 1047 MB             ; 00:00:01                           ;
+; Total                     ; 00:00:23     ; --                      ; --                  ; 00:00:47                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

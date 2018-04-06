@@ -1,22 +1,46 @@
-module RegisterBank
-#(parameter DATA_WIDTH=31, parameter ADDR_WIDTH=5)
-(
-	input [(DATA_WIDTH-1):0] data,
-	input [(ADDR_WIDTH-1):0] read_addr, write_addr,
-	input we, clk,
-	output reg [(DATA_WIDTH-1):0] q
-);
+module RegBank(readAddress1, 
+               readAddress2, 
+               writeAddress, 
+               dataWrite, 
+               writeMark, 
+               clk, 
+               data1, 
+               data2, 
+               hlt, 
+               displayAddress, 
+               valueAddress);
 
-	// Declare the RAM variable
-	reg [DATA_WIDTH-1:0] ram[2**ADDR_WIDTH-1:0];
+  input [31:0] dataWrite;
+  input [4:0] writeAddress, readAddress1, readAddress2;
+  input writeMark, clk, hlt;
+  output [31:0] data1, data2;
+  output reg[31:0] displayAddress;
+  output reg [7:0] valueAddress;
 
-	always @ (posedge clk)
-	begin
-		// Write
-		if (we)
-			ram[write_addr] <= data;
+  reg [31:0] RB[31:0];
 
-		q <= ram[read_addr];
-	end
+  always @ (posedge clk) 
+  begin
+
+		RB[0] = 32'b0;
+		if(writeMark) 
+      RB[writeAddress] = dataWrite;
+
+		if(hlt) 
+    begin
+			valueAddress = RB[readAddress1];
+			displayAddress= readAddress1;
+		end
+		else 
+    begin
+			valueAddress = 8'b0;
+			displayAddress = 32'b0; 
+		end
+	
+  end
+  
+  assign data1 = RB[readAddress1];
+  assign data2 = RB[readAddress2];
+  
 
 endmodule

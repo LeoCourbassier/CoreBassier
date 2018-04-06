@@ -21,7 +21,7 @@ module ALU(opCode, dataA, dataB, zero, overflow, error, dataC);
 			  5'b00000, 5'b00001:
 			  begin
 					_temp = {8'h00000000,dataA} + {8'h00000000,dataB};
-					overflow = (dataC < 8'hFFFFFFFF) ? 0 : 1;
+					overflow = (_temp < 8'hFFFFFFFF) ? 0 : 1;
 					dataC = _temp;
 			  end
 			  
@@ -51,7 +51,7 @@ module ALU(opCode, dataA, dataB, zero, overflow, error, dataC);
 			  // Mod
 			  5'b01000: dataC = dataA % dataB;
 
-			  // SetLessThan, SetLessThanImediate
+			  // SetLesserThan, SetLesserThanImediate
 			  5'b01001, 5'b01010: dataC = (dataA < dataB);
 
 			  // And, Andi
@@ -71,9 +71,6 @@ module ALU(opCode, dataA, dataB, zero, overflow, error, dataC);
 			  
 			  // SetGreaterThan, SetGreaterThanImediate
 			  5'b10010, 5'b10011: dataC = (dataA > dataB);
-			  
-			  // SetEQuals
-			  5'b10100: dataC = (dataA == dataB);
 		 endcase
 		 zero = (dataC == 0);
 		 error = (overflow == 1) ? 1 : 0;
