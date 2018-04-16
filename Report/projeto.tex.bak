@@ -1,0 +1,362 @@
+\documentclass[a4paper, 12pt]{article}
+
+\usepackage[portuges]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{indentfirst}
+\usepackage{graphicx}
+\usepackage{multicol,lipsum}
+\usepackage{tikz}
+\usepackage{circuitikz}
+\usepackage{float}
+\usepackage{hyperref}
+
+\newcommand\tab[1][20pt]{\hspace*{#1}}
+
+\begin{document}
+%\maketitle
+
+\begin{titlepage}
+	\begin{center}
+	
+	\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=10cm]{unifesp.png}
+	\end{figure}
+
+		\Huge{Universidade Federal de São Paulo}\\
+		\large{Laboratório de Circuitos Digitais}\\ 
+		\large{Projeto 7}\\ 
+		\vspace{15pt}
+        \vspace{95pt}
+        \textbf{\LARGE{Máquina de estados}}\\
+		%\title{{\large{Título}}}
+		\vspace{2,5cm}
+	\end{center}
+	
+	\begin{flushleft}
+		\begin{tabbing}
+			Professor Dr. Tiago de Oliveira\\
+			Leonardo Courbassier Martins\\
+			Integral IA\\
+			103230
+	\end{tabbing}
+ \end{flushleft}
+	\vspace{1cm}
+	
+	\begin{center}
+		\vspace{\fill}
+			 Novembro\\
+		 2016
+			\end{center}
+\end{titlepage}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\tableofcontents
+\thispagestyle{empty}
+
+\newpage
+\pagenumbering{arabic}
+% % % % % % % % % % % % % % % % % % % % % % % % % % %
+\section{Introdução}
+Circuitos digitais é uma disciplina baseada no sistema binário e em técnicas para desenvolver sistemas computacionais.\\\tab
+Em qualquer lugar que vamos, é fácil encontrar um sistema que possui um \textit{display} e, de acordo com um determinado período, ele mostra uma determinada sequência ou informação.\\\tab
+O projeto de circuitos digitais é empregado em várias áreas atualmente, tais como: comunicação, indústria automobilística, e indústria de entretenimento. Cada vez mais, suas aplicações são usadas no cotidiano, desde computadores até controles remotos e, por isso, saber projetar um circuito torna-se imprescindível para qualquer profissional na área da tecnologia.
+
+\section{Objetivos}
+Neste relatório, apresenta-se uma máquina de estados com saída em um \textit{display} de 7 segmentos que, a cada 1,0s (aproximadamente), mostra um número diferente. Seu funcionamento é semelhante a um contador (\ref{ref_contador}).\\
+A sequência a ser mostrada por esse sistema digital é: 2 5 1 8 4 0 2 6 8.\\
+Foi utilizado o \textit{software} Quartus II \cite{quartus}, o \textit{kit} FPGA para implementação e teste desse circuito e a linguagem de descrição de \textit{hardware} Verilog \cite{verilog}.
+\newpage
+
+\section{Fundamentação Teórica}
+\subsection{Sistema Numérico Binário}
+No mundo digital, usa-se o sistema binário como principal, pois existe uma distribuição discreta de grandezas. É feito então o algarismo 0 como o estado ``desligado'' e o algarismo 1 como ``ligado''.\\
+Como o próprio nome diz, neste universo do sistema binário, existem apenas dois algarismos, o 0 e o 1. Todos os outros números são, então, uma combinação desses dois algarismos.\\
+\tab
+Para poder calcular esses novos números, é possível pensar  em como fazer, intuitivamente, na base decimal, para contar. Depois do 9, tem-se o 10, pois esgota-se os algarismos e então, volta-se ao começo (0) e adiciona-se +1 ao algarismo da esquerda.\\
+A equação (\ref{e1}) demonstra a soma de dois números binários.
+\begin{equation}
+\label{e1}
+\begin{split}
+01 \\
+\frac{+1}{10}
+\end{split}
+\end{equation}
+\begin{center}
+Soma binária
+\end{center}
+
+\subsection{Funções Lógicas Primárias}
+Um circuito digital é uma combinação de dispositivos projetados para manipular informações lógicas ou quantidades físicas que são representadas no formato digital \cite{tocci}. 
+Quando quer-se projetar um circuito digital, deve-se utilizar as portas (funções) lógicas para expressar as equações lógicas e implementar o sistema.\\
+Há várias maneiras de conseguir tais expressões lógicas \footnote{Como mostrado em \cite{tocci}}
+
+\subsection{Máquina de Estados}\label{ref_maq_intro}
+O termo máquina de estados se refere a um circuito que sequencia um conjunto de estados predeterminados controlados por um \textit{clock} e outros sinais de entrada, é emprego mais habitualmente para descrever outros tipos de circuitos sequenciais \cite{tocci}.
+\\Uma máquina de estados genérica é vista na Figura 1 e pode ser montada seguindo as seguintes instruções.\\
+\begin{enumerate}
+\item Determinar o número de estados necessários para determinar todas as possíveis transições do circuito.
+\item Montar um diagrama que demonstra as possíveis mudanças de estados que o circuito assumirá.
+\item Descrever, em uma tabela de estados, os possíveis estados que assumirá, de acordo com a entrada.
+\item De acordo com o número de estados, estipula-se o número de FFs que serão utilizados.
+\item Gerar expressões para cada novo bit do próximo estado.
+\item Gerar expressões para as saídas.
+\item Gerar o circuito.
+\end{enumerate}
+\begin{figure}[H]
+	\label{fig_maq}
+	\centering
+	\includegraphics[scale=0.5]{moore.png}
+	\caption{Máquina de Estados de Moore}
+	\end{figure}
+	
+\subsection{Linguagem de Descrição de \textit{Hardware}}
+Uma linguagem de descrição de \textit{hardware} é uma linguagem para uma descrição e \textit{design} de um circuito (lógica digital). Ela descreve a operação do circuito, organização e é amplamente utilizada atualmente, pois muitas vezes não é possível ficar fazendo esquemáticos muito complexos \cite{livro2}.\\
+Foi utilizado o \textit{Verilog} da Altera nesse projeto \cite{verilog}.
+
+\subsubsection{Verilog}
+Como em linguagens de programação em geral, o \textit{verilog} também tem seus tipos de dados que são apresentados na tabela a seguir \cite{livro2}:
+
+\begin{center}
+  \begin{tabular}{| c | c |}
+    \hline
+ 	\textbf{Tipo de dado} & \textbf{Descrição}\\
+ 	\hline
+ 	\textit{wire} & Faz conexão entre dois pontos (variáveis)\\
+ 	\hline
+ 	\textit{reg} & Abstração de um registrador\\
+ 	\hline
+  \end{tabular}
+\end{center}
+\begin{center}
+Tabela 1: Tipos de dados do \textit{verilog}.
+\end{center}
+Componentes do \textit{verilog}:
+
+\begin{enumerate}
+\item Um módulo é similar a uma função nas demais linguagens de programação (declarado como \textit{module}).\\
+\item Variáveis podem ser utilizadas como entradas (\textit{input}) e saídas (\textit{output}) para comunicação com os demais módulos.\\
+\item Operadores aritméticos ($+,-,*,/$).\\
+\item Comparações lógicas como o \textit{if} ou \textit{case}.\\
+\item Trabalhar com os dados em binário, hexadecimal ou octal.
+\end{enumerate}
+
+A Figura 2 mostra um exemplo de módulo (calculador de próximo estado de uma máquina de estados) que usa entrada, saída e 
+operadores lógicos.
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.8]{ex1.png}
+	\caption{Diagrama de estados}
+	\end{figure}
+
+\newpage
+\section{Desenvolvimento}
+Esse projeto conta com o kit FPGA, que contém um \textit{clock} de 50 MHz. Foi necessário montar uma máquina de estados (\ref{ref_maq_intro}) que deve conter 10 estados, um para cada número que será mostrado no \textit{Display}.\\
+O kit FPGA conta com vários \textit{Display} de 7 segmentos, chaves e botões --- além de outras ferramentas.\\
+\textbf{Sequência}: 2 - 5 - 1 - 8 - 4 - 0 - 2 - 6 - 8.\\
+
+\textbf{Funcionamento}: Dependendo das entradas X e Y, o próximo número da sequência deveria ser mostrado. Para isso, tem-se os seguintes casos:\\
+
+\begin{center}
+  \begin{tabular}{| c | c |}
+    \hline
+ 	\textbf{Valor de X e Y} & \textbf{Consequência}\\
+ 	\hline
+ 	00 & Mantém o estado atual\\
+ 	\hline
+ 	01 & Conta decrescentemente em relação a sequência\\
+ 	\hline
+ 	10 & Conta crescentemente em relação a sequência\\
+ 	\hline
+ 	11 & Apaga todos os segmentos do \textit{display}\\
+ 	\hline
+  \end{tabular}
+\end{center}
+\begin{center}
+Tabela 2: Descrição da máquina de estados.
+\end{center}
+
+Com essas informações, foi possível projetar o circuito.
+
+\subsection{Máquina de Estados}\label{ref_maq}
+Começa-se então definindo o número de estados necessários (como definido em \ref{ref_maq_intro}) e o número de \textit{flipflops}.\\O diagrama pode ser visto na figura a seguir:
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.7]{maqest.png}
+	\caption{Diagrama de estados}
+	\end{figure}
+A partir dos estados, foi gerada a Tabela 3 que contém a transição dos estados.
+\begin{center}
+  \begin{tabular}{| c | c | c | c | c | c |}
+    \hline
+ 	Estado Atual & \multicolumn{4}{|c|}{Próximo Estado (ABCD)} & Saída\\\hline
+    abcd & $XY = 00$ & $XY = 01$ & $XY = 10$ & $XY = 11$ & $Z_1Z_2Z_3Z_4$\\ \hline
+    0000 & 0000 & 1000 & 0001 & 1001 & 0010 ($2_{10}$) \\ \hline
+    0001 & 0001 & 0000 & 0010 & 1001 & 0101 ($5_{10}$)\\ \hline
+    0010 & 0010 & 0001 & 0011 & 1001 & 0001 ($1_{10}$)\\ \hline
+    0011 & 0011 & 0010 & 0100 & 1001 & 1000 ($8_{10}$)\\ \hline
+    
+    0100 & 0100 & 0011 & 0101 & 1001 & 0100 ($4_{10}$)\\ \hline
+    0101 & 0101 & 0100 & 0110 & 1001 & 0000 ($0_{10}$)\\ \hline
+    0110 & 0110 & 0101 & 0111 & 1001 & 0010 ($2_{10}$)\\ \hline
+    0111 & 0111 & 0110 & 0100 & 1001 & 0110 ($6_{10}$)\\ \hline
+    
+    1000 & 1000 & 0111 & 0000 & 1001 & 1000 ($8_{10}$)\\ \hline
+    
+    1001 & 1001 & 1000 & 0000 & 1001 & 1010 ($10_{10}$)\\ \hline
+    1010 & $\times$ & $\times$ & $\times$ & $\times$ & $\times\times\times\times$ \\ \hline
+    1011 & $\times$ & $\times$ & $\times$ & $\times$ & $\times\times\times\times$ \\ \hline
+    1100 & $\times$ & $\times$ & $\times$ & $\times$ & $\times\times\times\times$ \\ \hline
+    1101 & $\times$ & $\times$ & $\times$ & $\times$ & $\times\times\times\times$ \\ \hline
+    1110 & $\times$ & $\times$ & $\times$ & $\times$ & $\times\times\times\times$ \\ \hline
+    1111 & $\times$ & $\times$ & $\times$ & $\times$ & $\times\times\times\times$ \\ \hline
+  \end{tabular}
+\end{center}
+\begin{center}
+Tabela 3: Transição dos estados
+\end{center}
+
+A partir da Tabela 2 e Tabela 3, foi utilizado \textit{if} para testarmos qual estado a máquina se encontrado e qual ela deverá ir.\\
+O resultado disso é visto na Figura 4 nos anexos.\\
+
+\subsection{Frequência de Clock}
+Foi necessário garantir que a transição entre um estado e outro seja de 1s. Considerando o AutoClock de 50 MHz, observou-se que:\\
+\[
+\frac{50 \times 10^{6}s}{2^{25}} \approx 1,5s
+\]
+Para obter $2^{25}$ divisões de frequência, foi utilizado 25 \textit{flipflops}.\\
+\subsection{Conversão da Saída para Display}
+A última parte foi \textit{Display}. Para isso, utilizou-se da Tabela 4:\\
+
+\begin{center}\label{ref_table_seg}
+  \begin{tabular}{| c | c | c | c | c | c | c | c |}
+    \hline
+    WXYZ & a & b & c & d & e & f & g\\
+   \hline
+    0000 & 1 & 1 & 1 & 1 & 1 & 1 & 0 \\ \hline
+    0001 & 0 & 1 & 1 & 0 & 0 & 0 & 0 \\ \hline
+    0010 & 1 & 1 & 0 & 1 & 1 & 0 & 1 \\ \hline
+    0011 & 1 & 1 & 1 & 1 & 0 & 0 & 1 \\ \hline
+    
+    0100 & 0 & 1 & 1 & 0 & 0 & 1 & 1 \\ \hline
+    0101 & 1 & 0 & 1 & 1 & 0 & 1 & 1 \\ \hline
+    0110 & 1 & 0 & 1 & 1 & 1 & 1 & 1 \\ \hline
+    0111 & 1 & 1 & 1 & 0 & 0 & 0 & 0 \\ \hline
+    
+    1000 & 1 & 1 & 1 & 1 & 1 & 1 & 1 \\ \hline
+    1001 & 1 & 1 & 1 & 1 & 0 & 1 & 1 \\ \hline
+    
+    1010 & $\times$ & $\times$ & $\times$ & $\times$ & $\times$ & $\times$ & $\times$\\ \hline
+    $\vdots$ & $\vdots$ & $\vdots$ & $\vdots$ & $\vdots$ & $\vdots$ & $\vdots$ & $\vdots$\\ \hline
+    1111 & $\times$ & $\times$ & $\times$ & $\times$ & $\times$ & $\times$ & $\times$\\ \hline
+  \end{tabular}
+\end{center}
+\begin{center}
+Tabela 4: Conversão de binário para 7 segmentos
+\end{center}
+\textit{Obs:} Não é possível representar os números de $1010_b$ até $1111_b$ em um único dígito no \textit{display}, por isso, estão como irrelevantes na tabela.\\
+A partir da tabela, foi gerado o módulo conversor (Figura 9, nos anexos).
+\subsection{Implementação}
+Foi implementado os seguintes módulos (Figuras disponíveis em anexo):\\
+\begin{itemize}
+\item \textbf{Main}: Chama os demais módulos.
+\item \textbf{Clock}: Faz a divisão do \textit{clock} por 25.
+\item \textbf{NextState}: Calcula o próximo estado baseado no estado atual e nas entradas XY.
+\item \textbf{CurrentState}: Lida com o \textit{reset} síncrono do sistema.
+\item \textbf{Output}: Converte o estado atual na sua saída respectiva.
+\item \textbf{BCDToSegments}: Utiliza da Tabela 4 e implementa a saída para o \textit{display}.
+\end{itemize}
+
+\newpage
+\section{Resultados Obtidos}
+Após a implementação do circuito, foi utilizado o \textit{WaveForm} do Quartus II para teste do sistema. Foi obtido:\\
+No primeiro teste, foi colocado $XY = 00$ fazendo com que o sistema continue no seu estado.
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.45]{ex3.png}
+	\caption{Teste para $XY = 00$}
+	\end{figure}
+
+Em seguida, foi colocado o $XY=01$ fazendo com que o sistema conte decrescentemente.
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.45]{ex4.png}
+	\caption{Teste para $XY = 01$}
+	\end{figure}
+	
+Após isso, foi colocado o $XY=10$ fazendo com que o sistema conte crescentemente.
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.45]{ex5.png}
+	\caption{Teste para $XY = 10$}
+	\end{figure}
+	
+Por último, foi colocado o $XY=11$ fazendo com que o sistema volte ao primeiro estado.
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.45]{ex6.png}
+	\caption{Teste para $XY = 11$}
+	\end{figure}
+
+\section{Conclusão}
+Pode-se concluir que o experimento obteve os resultados esperados e funcionou perfeitamente. Os conhecimentos obtidos em Circuitos Digitais foram aplicados como um todo e cada parte foi fundamental no desenvolver do projeto.\\
+A partir desse projeto, os conceitos foram consolidados e foi aprendida a ferramenta Quartus II de maneira mais profunda, o que é muito interessante, uma vez que esse software é utilizado demasiadamente no mercado e é muito poderoso.\\
+
+\section{Anexos}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.8]{ex2.png}
+	\caption{Módulo de Próximo Estado}
+	\end{figure}
+	
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.8]{ex7.png}
+	\caption{Módulo Conversor}
+	\end{figure}
+	
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.8]{ex8.png}
+	\caption{Módulo de Saída para o \textit{Display}}
+	\end{figure}
+	
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.8]{ex9.png}
+	\caption{Módulo de Divisor de Frequência}
+	\end{figure}
+	
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.8]{ex9.png}
+	\caption{Módulo de Estado Atual}
+	\end{figure}
+
+
+\begin{thebibliography}{9}
+
+\bibitem{quartus}
+  \textit{Software} Quartus:\\
+  \url{https://www.altera.com/products/design-software/fpga-design/quartus-prime/overview.html}
+  
+  \bibitem{verilog}
+  VAHID, Frank. Digital Design with RTL Design, VHDL, and Verilog.
+ 
+ \bibitem{tocci}
+  TOCCI, Ronal J. Sistemas digitais: principios e aplicações - 10.ed. 2007.
+  
+  \bibitem{verilog}
+  Verilog:\\
+  \url{https://www.altera.com/support/support-resources/design-examples/design-software/verilog.html}
+ 
+ \bibitem{livro2}
+  CILETTI, Michael D. Advanced digital design with the VERILOG HDL. 
+ 
+\end{thebibliography}
+
+\end{document}
+
+
+

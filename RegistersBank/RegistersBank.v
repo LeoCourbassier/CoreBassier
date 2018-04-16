@@ -21,7 +21,6 @@ module RegBank(readAddress1,
 
   always @ (posedge clk) 
   begin
-
 		RB[0] = 32'b0;
 		if(writeMark) 
       RB[writeAddress] = dataWrite;
@@ -36,11 +35,8 @@ module RegBank(readAddress1,
 			valueAddress = 8'b0;
 			displayAddress = 32'b0; 
 		end
-	
   end
   
   assign data1 = RB[readAddress1];
   assign data2 = RB[readAddress2];
-  
-
 endmodule

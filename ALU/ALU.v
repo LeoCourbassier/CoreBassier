@@ -1,4 +1,4 @@
-module ALU(opCode, dataA, dataB, zero, overflow, error, dataC);
+module ALU(opCode, dataA, dataB, branchSignal, overflow, error, dataC);
 
 	// Inputs
 	input [31:0] dataA;
@@ -9,16 +9,17 @@ module ALU(opCode, dataA, dataB, zero, overflow, error, dataC);
 	reg [63:0] _temp;
 	
 	// Outputs
-	output reg zero, overflow;
+	output reg branchSignal, overflow;
 	output reg error;
 	output reg [31:0] dataC;
 
 	always @ (opCode or dataA or dataB)
 	begin
 		 error = 0;
-		 case(opCode[4:0])
+		 branchSignal = 1;
+		 case(opCode[5:0])
 			  // Add, Addi
-			  5'b00000, 5'b00001:
+			  6'b000000, 6'b000001:
 			  begin
 					_temp = {8'h00000000,dataA} + {8'h00000000,dataB};
 					overflow = (_temp < 8'hFFFFFFFF) ? 0 : 1;
@@ -26,13 +27,13 @@ module ALU(opCode, dataA, dataB, zero, overflow, error, dataC);
 			  end
 			  
 			  // Sub, Subi
-			  5'b00010, 5'b00011:
+			  6'b000010, 6'b000011:
 			  begin
 					dataC = dataA - dataB;
 			  end
 
 			  // Mult, Multi
-			  5'b00100, 5'b00101:
+			  6'b000100, 6'b000101:
 			  begin
 					_temp = {8'h00000000,dataA} * {8'h00000000,dataB};
 					overflow = (_temp < 8'hFFFFFFFF) ? 0 : 1;
@@ -40,7 +41,7 @@ module ALU(opCode, dataA, dataB, zero, overflow, error, dataC);
 			  end
 
 			  // Div, divi
-			  5'b00110, 5'b00111:
+			  6'b000110, 6'b000111:
 			  begin
 					// Div by zero error
 					error = (dataB == 0) ? 1 : 0;        
@@ -49,30 +50,45 @@ module ALU(opCode, dataA, dataB, zero, overflow, error, dataC);
 			  end
 
 			  // Mod
-			  5'b01000: dataC = dataA % dataB;
+			  6'b001000: dataC = dataA % dataB;
 
 			  // SetLesserThan, SetLesserThanImediate
-			  5'b01001, 5'b01010: dataC = (dataA < dataB);
+			  6'b001001, 6'b001010: dataC = (dataA < dataB);
 
 			  // And, Andi
-			  5'b01011, 5'b01100: dataC = dataA & dataB;
+			  6'b001011, 6'b001100: dataC = dataA & dataB;
 
 			  // Or, Ori
-			  5'b01101, 5'b01110: dataC = dataA | dataB;
+			  6'b001101, 6'b001110: dataC = dataA | dataB;
 
 			  // Not
-			  5'b01111: dataC = ~dataA;
+			  6'b001111: dataC = ~dataA;
 
 			  // Shift Right
-			  5'b10000: dataC = dataA >> dataB;
+			  6'b010000: dataC = dataA >> dataB;
 
 			  // Shift Left
-			  5'b10001: dataC = dataA << dataB;
+			  6'b010001: dataC = dataA << dataB;
 			  
 			  // SetGreaterThan, SetGreaterThanImediate
-			  5'b10010, 5'b10011: dataC = (dataA > dataB);
+			  6'b010010, 6'b010011: dataC = (dataA > dataB);
+
+			  // Branch on Equal
+			  6'b010111: branchSignal = (dataB == dataA);
+
+			  // Branch on Not Equal
+			  6'b011000: branchSignal = (dataB != dataA);
+
+			  // Out
+              6'b01110: dataC = dataA;
+
+			  default: 
+			  begin
+					branchSignal = 1;
+				  	dataC = dataB;
+			  end
 		 endcase
-		 zero = (dataC == 0);
+		 //branchSignal = (dataC == 0);
 		 error = (overflow == 1) ? 1 : 0;
 	end
 endmodule
