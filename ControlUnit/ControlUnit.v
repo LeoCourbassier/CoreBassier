@@ -1,4 +1,4 @@
-module controlUnit(clock,
+module ControlUnit(clock,
                    opcode,
                    aluCode,
                    targetRegister,
@@ -8,21 +8,21 @@ module controlUnit(clock,
                    memoryRead,
                    memoryToRegister,
                    branch,
-                   halt)
+                   halt);
     
     // Inputs
     input clock;
-    input reg[5:0] opcode;
+    input [5:0] opcode;
     // Wait for in | out
 
     // Outputs
     output reg[5:0] aluCode;
-    output targetRegister, aluSource, writeRegister, memoryWrite, memoryRead, 
+    output reg targetRegister, aluSource, writeRegister, memoryWrite, memoryRead, 
     memoryToRegister, branch, halt;
 
     always @ (clock)
     begin
-        case (opcode[5:0])
+        case (opcode)
             // Add, Addi
             6'b000000, 6'b000001,
             // Sub, Subi
@@ -46,8 +46,7 @@ module controlUnit(clock,
             // Shift Left
             6'b010001,
             // SetGreaterThan, SetGreaterThanImediate
-            6'b010010, 6'b010011
-            :
+            6'b010010, 6'b010011:
             begin
                 aluCode = opcode;
                 targetRegister = 1;
@@ -66,9 +65,9 @@ module controlUnit(clock,
                 aluCode = 6'b000000;
                 targetRegister = 0;
                 aluSource = 1;
-                writeRegister = opcode[5:0] == 6'b010100 ? 1 : 0;
-                memoryWrite = opcode[5:0] == 6'b010100 ? 0 : 1;
-                memoryRead = opcode[5:0] == 6'b010100 ? 1 : 0;
+                writeRegister = opcode == 6'b010100 ? 1 : 0;
+                memoryWrite = opcode == 6'b010100 ? 0 : 1;
+                memoryRead = opcode == 6'b010100 ? 1 : 0;
                 memoryToRegister = 1;
                 branch = 0;
                 halt = 0;
@@ -173,4 +172,4 @@ module controlUnit(clock,
             end
         endcase
     end
-end module
+endmodule

@@ -3,7 +3,7 @@ module ALU(opCode, dataA, dataB, branchSignal, overflow, error, dataC);
 	// Inputs
 	input [31:0] dataA;
 	input [31:0] dataB;
-	input [4:0] opCode;
+	input [5:0] opCode;
 
 	// Temporary
 	reg [63:0] _temp;
@@ -80,7 +80,7 @@ module ALU(opCode, dataA, dataB, branchSignal, overflow, error, dataC);
 			  6'b011000: branchSignal = (dataB != dataA);
 
 			  // Out
-              6'b01110: dataC = dataA;
+              6'b011100: dataC = dataA;
 
 			  default: 
 			  begin
