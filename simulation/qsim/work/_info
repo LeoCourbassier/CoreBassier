@@ -7,23 +7,23 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 d/home/leonardo/Documents/college/Lab AOC/CoreBassier/simulation/qsim
+d/home/leonardo/Documents/college/Lab AOC/CoreBassier/simulation/qsim
 vALU
-Z1 !s110 1521566955
+Z0 !s110 1525806505
 !i10b 1
-!s100 D?UQ01RH1K2QPKdlz@z>K2
-IL`8fZHTZ5LTUAfW0N_>:?3
-Z2 VDg1SIo80bB@j0V0VzS_@n1
-R0
-Z3 w1521566954
-Z4 8main.vo
-Z5 Fmain.vo
-L0 31
+!s100 PU=GNDhFPc?4o=65Z^a853
+IHBI<k2zfg8ZkWbMI@dK<z1
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/Users/leoco/Documents/college/Lab AOC/CoreBassier/simulation/qsim
+w1525806504
+Z3 8main.vo
+Z4 Fmain.vo
+Z5 L0 31
 Z6 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z7 !s108 1521566955.000000
+Z7 !s108 1525806505.000000
 Z8 !s107 main.vo|
 Z9 !s90 -work|work|main.vo|
 !i113 1
@@ -31,45 +31,87 @@ Z10 o-work work
 Z11 tCvgOpt 0
 n@a@l@u
 vALU_vlg_vec_tst
-R1
-!i10b 1
-!s100 =4h66e<QWVHVWcZjf^fI>2
-IbTS7D@kZ@4i@dl<N3o:mD0
-R2
 R0
-w1521566952
-8ALU/Waveform.vwf.vt
-FALU/Waveform.vwf.vt
-L0 29
+!i10b 1
+!s100 ERUn:jnE_GG21R]AcI7L11
+I:Qhf@[=5e<RoP`]I[W>0Z2
+R1
+R2
+w1525806502
+8Waveform4.vwf.vt
+FWaveform4.vwf.vt
+Z12 L0 29
 R6
 r1
 !s85 0
 31
 R7
-!s107 ALU/Waveform.vwf.vt|
-!s90 -work|work|ALU/Waveform.vwf.vt|
+!s107 Waveform4.vwf.vt|
+!s90 -work|work|Waveform4.vwf.vt|
 !i113 1
 R10
 R11
 n@a@l@u_vlg_vec_tst
 vhard_block
-R1
+Z13 !s110 1525973429
 !i10b 1
-!s100 <OaX7dcnKP5lR_2g3=bL>2
-IPHYj^`zjFWJSPQIR=_^mV2
+!s100 ZHN;5^5iQ^@;UP3SeREP91
+I]@>K7egmB4AW@hA8nLIKV1
+R1
 R2
-R0
+Z14 w1525973427
 R3
 R4
-R5
-L0 64713
+L0 52247
 R6
 r1
 !s85 0
 31
-R7
+Z15 !s108 1525973428.000000
 R8
 R9
+!i113 1
+R10
+R11
+vmain
+R13
+!i10b 1
+!s100 `[28PPbf=ddQPcPbG?j>F0
+IUPB>GLH?2Mni<dBoV<X3i2
+R1
+R2
+R14
+R3
+R4
+R5
+R6
+r1
+!s85 0
+31
+R15
+R8
+R9
+!i113 1
+R10
+R11
+vmain_vlg_vec_tst
+R13
+!i10b 1
+!s100 >PTK;?UN=0U`ao5i73]=_1
+I4g^45Xi9;E6U37Gh:aRBa3
+R1
+R2
+w1525973424
+8Waveform3.vwf.vt
+FWaveform3.vwf.vt
+R12
+R6
+r1
+!s85 0
+31
+!s108 1525973429.000000
+!s107 Waveform3.vwf.vt|
+!s90 -work|work|Waveform3.vwf.vt|
 !i113 1
 R10
 R11

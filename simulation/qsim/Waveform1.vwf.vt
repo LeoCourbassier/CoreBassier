@@ -18,385 +18,228 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "03/15/2018 21:19:15"
+// Generated on "05/03/2018 14:26:49"
                                                                                 
-// Verilog Test Bench (with test vectors) for design :                          ALU
+// Verilog Test Bench (with test vectors) for design :                          main
 // 
 // Simulation tool : 3rd Party
 // 
 
 `timescale 1 ps/ 1 ps
-module ALU_vlg_vec_tst();
+module main_vlg_vec_tst();
 // constants                                           
 // general purpose registers
-reg [31:0] dataA;
-reg [31:0] dataB;
-reg [4:0] opCode;
+reg clock;
+reg key0;
+reg key1;
+reg key2;
+reg key3;
+reg sw0;
+reg sw1;
+reg sw2;
+reg sw3;
+reg sw4;
+reg sw5;
+reg sw6;
+reg sw7;
+reg sw8;
+reg sw9;
+reg sw10;
+reg sw11;
+reg sw12;
+reg sw13;
+reg sw14;
+reg sw15;
+reg sw16;
+reg sw17;
 // wires                                               
-wire [31:0] dataC;
-wire error;
-wire overflow;
-wire zero;
+wire [6:0] hex0;
+wire [6:0] hex1;
+wire [6:0] hex2;
+wire [6:0] hex3;
+wire [6:0] hex4;
+wire [6:0] hex5;
+wire [6:0] hex6;
+wire [6:0] hex7;
 
 // assign statements (if any)                          
-ALU i1 (
+main i1 (
 // port map - connection between master ports and signals/registers   
-	.dataA(dataA),
-	.dataB(dataB),
-	.dataC(dataC),
-	.error(error),
-	.opCode(opCode),
-	.overflow(overflow),
-	.zero(zero)
+	.clock(clock),
+	.hex0(hex0),
+	.hex1(hex1),
+	.hex2(hex2),
+	.hex3(hex3),
+	.hex4(hex4),
+	.hex5(hex5),
+	.hex6(hex6),
+	.hex7(hex7),
+	.key0(key0),
+	.key1(key1),
+	.key2(key2),
+	.key3(key3),
+	.sw0(sw0),
+	.sw1(sw1),
+	.sw2(sw2),
+	.sw3(sw3),
+	.sw4(sw4),
+	.sw5(sw5),
+	.sw6(sw6),
+	.sw7(sw7),
+	.sw8(sw8),
+	.sw9(sw9),
+	.sw10(sw10),
+	.sw11(sw11),
+	.sw12(sw12),
+	.sw13(sw13),
+	.sw14(sw14),
+	.sw15(sw15),
+	.sw16(sw16),
+	.sw17(sw17)
 );
 initial 
 begin 
 #1000000 $finish;
 end 
-// opCode[ 4 ]
-initial
-begin
-	opCode[4] = 1'b0;
-end 
-// opCode[ 3 ]
-initial
-begin
-	opCode[3] = 1'b0;
-end 
-// opCode[ 2 ]
-initial
-begin
-	opCode[2] = 1'b0;
-end 
-// opCode[ 1 ]
-initial
-begin
-	opCode[1] = 1'b0;
-end 
-// opCode[ 0 ]
-initial
-begin
-	opCode[0] = 1'b0;
-end 
-// dataA[ 31 ]
-initial
-begin
-	dataA[31] = 1'b0;
-end 
-// dataA[ 30 ]
-initial
-begin
-	dataA[30] = 1'b0;
-end 
-// dataA[ 29 ]
-initial
-begin
-	dataA[29] = 1'b1;
-end 
-// dataA[ 28 ]
-initial
-begin
-	dataA[28] = 1'b0;
-end 
-// dataA[ 27 ]
-initial
-begin
-	dataA[27] = 1'b0;
-end 
-// dataA[ 26 ]
-initial
-begin
-	dataA[26] = 1'b0;
-end 
-// dataA[ 25 ]
-initial
-begin
-	dataA[25] = 1'b0;
-end 
-// dataA[ 24 ]
-initial
-begin
-	dataA[24] = 1'b0;
-end 
-// dataA[ 23 ]
-initial
-begin
-	dataA[23] = 1'b0;
-end 
-// dataA[ 22 ]
-initial
-begin
-	dataA[22] = 1'b0;
-end 
-// dataA[ 21 ]
-initial
-begin
-	dataA[21] = 1'b0;
-end 
-// dataA[ 20 ]
-initial
-begin
-	dataA[20] = 1'b0;
-end 
-// dataA[ 19 ]
-initial
-begin
-	dataA[19] = 1'b0;
-end 
-// dataA[ 18 ]
-initial
-begin
-	dataA[18] = 1'b0;
-end 
-// dataA[ 17 ]
-initial
-begin
-	dataA[17] = 1'b0;
-end 
-// dataA[ 16 ]
-initial
-begin
-	dataA[16] = 1'b0;
-end 
-// dataA[ 15 ]
-initial
-begin
-	dataA[15] = 1'b0;
-end 
-// dataA[ 14 ]
-initial
-begin
-	dataA[14] = 1'b0;
-end 
-// dataA[ 13 ]
-initial
-begin
-	dataA[13] = 1'b0;
-end 
-// dataA[ 12 ]
-initial
-begin
-	dataA[12] = 1'b0;
-end 
-// dataA[ 11 ]
-initial
-begin
-	dataA[11] = 1'b0;
-end 
-// dataA[ 10 ]
-initial
-begin
-	dataA[10] = 1'b0;
-end 
-// dataA[ 9 ]
-initial
-begin
-	dataA[9] = 1'b0;
-end 
-// dataA[ 8 ]
-initial
-begin
-	dataA[8] = 1'b0;
-end 
-// dataA[ 7 ]
-initial
-begin
-	dataA[7] = 1'b0;
-end 
-// dataA[ 6 ]
-initial
-begin
-	dataA[6] = 1'b0;
-end 
-// dataA[ 5 ]
-initial
-begin
-	dataA[5] = 1'b0;
-end 
-// dataA[ 4 ]
-initial
-begin
-	dataA[4] = 1'b0;
-end 
-// dataA[ 3 ]
-initial
-begin
-	dataA[3] = 1'b0;
-end 
-// dataA[ 2 ]
-initial
-begin
-	dataA[2] = 1'b0;
-end 
-// dataA[ 1 ]
-initial
-begin
-	dataA[1] = 1'b0;
-end 
-// dataA[ 0 ]
-initial
-begin
-	dataA[0] = 1'b0;
-end 
-// dataB[ 31 ]
-initial
-begin
-	dataB[31] = 1'b0;
-end 
-// dataB[ 30 ]
-initial
-begin
-	dataB[30] = 1'b0;
-end 
-// dataB[ 29 ]
-initial
-begin
-	dataB[29] = 1'b1;
-end 
-// dataB[ 28 ]
-initial
-begin
-	dataB[28] = 1'b0;
-end 
-// dataB[ 27 ]
-initial
-begin
-	dataB[27] = 1'b0;
-end 
-// dataB[ 26 ]
-initial
-begin
-	dataB[26] = 1'b0;
-end 
-// dataB[ 25 ]
-initial
-begin
-	dataB[25] = 1'b0;
-end 
-// dataB[ 24 ]
-initial
-begin
-	dataB[24] = 1'b0;
-end 
-// dataB[ 23 ]
-initial
-begin
-	dataB[23] = 1'b0;
-end 
-// dataB[ 22 ]
-initial
+
+// clock
+always
 begin
-	dataB[22] = 1'b0;
+	clock = 1'b0;
+	clock = #10000 1'b1;
+	#10000;
 end 
-// dataB[ 21 ]
+
+// key0
 initial
 begin
-	dataB[21] = 1'b0;
+	key0 = 1'b0;
 end 
-// dataB[ 20 ]
+
+// key1
 initial
 begin
-	dataB[20] = 1'b0;
+	key1 = 1'b0;
 end 
-// dataB[ 19 ]
+
+// key2
 initial
 begin
-	dataB[19] = 1'b0;
+	key2 = 1'b0;
 end 
-// dataB[ 18 ]
+
+// key3
 initial
 begin
-	dataB[18] = 1'b0;
+	key3 = 1'b0;
 end 
-// dataB[ 17 ]
+
+// sw0
 initial
 begin
-	dataB[17] = 1'b0;
+	sw0 = 1'b0;
 end 
-// dataB[ 16 ]
+
+// sw1
 initial
 begin
-	dataB[16] = 1'b0;
+	sw1 = 1'b0;
 end 
-// dataB[ 15 ]
+
+// sw2
 initial
 begin
-	dataB[15] = 1'b0;
+	sw2 = 1'b0;
 end 
-// dataB[ 14 ]
+
+// sw3
 initial
 begin
-	dataB[14] = 1'b0;
+	sw3 = 1'b0;
 end 
-// dataB[ 13 ]
+
+// sw4
 initial
 begin
-	dataB[13] = 1'b0;
+	sw4 = 1'b0;
 end 
-// dataB[ 12 ]
+
+// sw5
 initial
 begin
-	dataB[12] = 1'b0;
+	sw5 = 1'b0;
 end 
-// dataB[ 11 ]
+
+// sw6
 initial
 begin
-	dataB[11] = 1'b0;
+	sw6 = 1'b0;
 end 
-// dataB[ 10 ]
+
+// sw7
 initial
 begin
-	dataB[10] = 1'b0;
+	sw7 = 1'b0;
 end 
-// dataB[ 9 ]
+
+// sw8
 initial
 begin
-	dataB[9] = 1'b0;
+	sw8 = 1'b0;
 end 
-// dataB[ 8 ]
+
+// sw9
 initial
 begin
-	dataB[8] = 1'b0;
+	sw9 = 1'b0;
 end 
-// dataB[ 7 ]
+
+// sw10
 initial
 begin
-	dataB[7] = 1'b0;
+	sw10 = 1'b0;
 end 
-// dataB[ 6 ]
+
+// sw11
 initial
 begin
-	dataB[6] = 1'b0;
+	sw11 = 1'b0;
 end 
-// dataB[ 5 ]
+
+// sw12
 initial
 begin
-	dataB[5] = 1'b0;
+	sw12 = 1'b0;
 end 
-// dataB[ 4 ]
+
+// sw13
 initial
 begin
-	dataB[4] = 1'b0;
+	sw13 = 1'b0;
 end 
-// dataB[ 3 ]
+
+// sw14
 initial
 begin
-	dataB[3] = 1'b0;
+	sw14 = 1'b0;
 end 
-// dataB[ 2 ]
+
+// sw15
 initial
 begin
-	dataB[2] = 1'b0;
+	sw15 = 1'b0;
 end 
-// dataB[ 1 ]
+
+// sw16
 initial
 begin
-	dataB[1] = 1'b0;
+	sw16 = 1'b0;
 end 
-// dataB[ 0 ]
+
+// sw17
 initial
 begin
-	dataB[0] = 1'b0;
+	sw17 = 1'b0;
 end 
 endmodule
 

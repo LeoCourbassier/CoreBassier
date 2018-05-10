@@ -15,7 +15,7 @@ module IO(
          );
     // Inputs
     input [4:0] address;
-	 input [31:0] data;
+	  input [31:0] data;
     input [5:0] opcode;
     input sw0, sw1, sw2, sw3, sw4, sw5, sw6, sw7, sw8, sw9, sw10, sw11, sw12, sw13, sw14, sw15, sw16, sw17;
     input key0, key1, key2, key3;

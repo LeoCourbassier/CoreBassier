@@ -8,6 +8,7 @@
 \usepackage{float}
 \usepackage{hyperref}
 \usepackage{graphicx}
+\usepackage{pdflscape}
 \usepackage{rotating}
 
 \newcommand\tab[1][20pt]{\hspace*{#1}}
@@ -195,10 +196,13 @@ Como no MIPS, o processador também utilizará de 32 registradores e alguns dele
 A mentalidade por trás dessa divisão de registradores está na usabilidade em programas mais complexos com chamadas recursivas e várias funções. Além de uma possível pilha para outros objetivos além da recursão.
 
 \subsection{Esquemático}
-\begin{sidewaysfigure}[htp]
+\begin{landscape}
+\begin{figure}[htp]
 	\includegraphics[scale=0.5]{LABAOC.png}
 	\caption{Esquemático do processador}
-\end{sidewaysfigure}
+\end{figure}
+\end{landscape}
+
 \newpage
 
 \section{Conclusão}

@@ -14,9 +14,12 @@ module RegistersBank(regA,
 
   reg [31:0] registers[31:0];
 
-  always @ (posedge clock) 
+  initial begin
+    registers[0] = 32'b0;
+  end
+
+  always @ ( posedge clock ) 
   begin
-		registers[0] = 32'b0;
 		if(writeFlag) 
       registers[regC] = dataWrite;
   end
