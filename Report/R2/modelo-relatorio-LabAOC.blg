@@ -1,0 +1,16 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: modelo-relatorio-LabAOC.aux
+The style file: abntex2-num.bst
+Database file #1: abntex2-options.bib
+Database file #2: referencias.bib
+Warning--entry type for "addrmodes" isn't style-file defined
+--line 21 of file referencias.bib
+Warning--entry type for "q2" isn't style-file defined
+--line 28 of file referencias.bib
+Warning--campo year vazio ou faltando em addrmodes
+Warning--campo year vazio ou faltando em q2
++---------------------------------------------------------+
+| Estilo bibliográfico abntex2-num.bst versão v-1.9.6           |
+| Em caso de dúvidas ou problemas com este estilo procure |
+| http://www.abntex.net.br/                               |
++---------------------------------------------------------+
+(There were 4 warnings)

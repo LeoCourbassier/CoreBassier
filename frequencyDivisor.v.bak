@@ -1,0 +1,21 @@
+module divfreq(
+    clock,
+    clockOut
+);
+
+    // Input
+    input clock;
+
+    integer [31:0] i;
+
+    // Output
+    output clockOut;
+
+    always @ ( posedge clock )
+    begin
+        if (i == 32'b11111111111111111111111111111111)
+        begin
+            i = 32'b00000000000000000000000000000000;
+            clockOut = ~clockOut;
+        end
+    end

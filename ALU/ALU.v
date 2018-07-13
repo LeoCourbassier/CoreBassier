@@ -22,8 +22,7 @@ module ALU
 	output reg error;
 	output reg [31:0] dataC;
 
-	/*opCode or dataA or dataB*/
-	always @ ( * )
+	always @ ( opCode or dataA or dataB )
 	begin
 		error = 0;
 		branchSignal = 1;
@@ -90,7 +89,14 @@ module ALU
 			6'b011000: branchSignal = (dataB != dataA);
 
 			// Out
-           	6'b011100: dataC = dataA;
+         6'b011100: dataC = dataA;
+
+		 	// Mov
+			6'b011101:
+			begin
+				branchSignal = 1;
+				dataC = dataA;
+			end
 
 			default: 
 			begin

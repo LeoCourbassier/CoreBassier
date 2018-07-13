@@ -1,0 +1,1 @@
+Branch or Jump before Halt makes the processor go into halt mode without jumping to new addr.

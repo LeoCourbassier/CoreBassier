@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Fri Jul 13 10:06:59 2018
+Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+Revision Name : CoreBassier
+Top-level Entity Name : main
+Family : Cyclone IV E
+Total logic elements : 6,048
+    Total combinational functions : 5,056
+    Dedicated logic registers : 1,062
+Total registers : 1062
+Total pins : 455
+Total virtual pins : 0
+Total memory bits : 65,536
+Embedded Multiplier 9-bit elements : 8
+Total PLLs : 0

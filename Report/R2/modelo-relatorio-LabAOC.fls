@@ -1,0 +1,333 @@
+PWD c:/Users/leoco/Documents/college/Lab AOC/Processor/Report/R2
+INPUT C:/Users/leoco/AppData/Local/MiKTeX/2.9/miktex/data/le/pdftex/pdflatex.fmt
+INPUT c:/Users/leoco/Documents/college/Lab AOC/Processor/Report/R2/modelo-relatorio-LabAOC.tex
+OUTPUT modelo-relatorio-LabAOC.log
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/abntex2/abntex2.cls
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/abntex2/abntex2.cls
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/base/ifthen.sty
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/base/ifthen.sty
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/memoir/memoir.cls
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/memoir/memoir.cls
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/generic/oberdiek/ifpdf.sty
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/generic/oberdiek/ifpdf.sty
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/ifetex/ifetex.sty
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/ifetex/ifetex.sty
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/plain/ifetex/ifetex.tex
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/generic/ifxetex/ifxetex.sty
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/generic/ifxetex/ifxetex.sty
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/generic/oberdiek/ifluatex.sty
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/generic/oberdiek/ifluatex.sty
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/memoir/mem12.clo
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/memoir/mem12.clo
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/cm/cmr12.tfm
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/cm/cmr10.tfm
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/textcase/textcase.sty
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/textcase/textcase.sty
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/hyperref/hyperref.sty
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/hyperref/hyperref.sty
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/generic/oberdiek/hobsub-hyperref.sty
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/generic/oberdiek/hobsub-hyperref.sty
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/generic/oberdiek/hobsub-hyperref.sty
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/generic/oberdiek/hobsub-generic.sty
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/generic/oberdiek/hobsub-generic.sty
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/graphics/keyval.sty
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/graphics/keyval.sty
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/oberdiek/auxhook.sty
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/oberdiek/auxhook.sty
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/oberdiek/kvoptions.sty
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/oberdiek/kvoptions.sty
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/hyperref/pd1enc.def
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/hyperref/pd1enc.def
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/00miktex/hyperref.cfg
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/00miktex/hyperref.cfg
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/url/url.sty
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/url/url.sty
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/memoir/memhfixc.sty
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/memoir/memhfixc.sty
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/hyperref/hpdftex.def
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/hyperref/hpdftex.def
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/oberdiek/rerunfilecheck.sty
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/oberdiek/rerunfilecheck.sty
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/oberdiek/bookmark.sty
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/oberdiek/bookmark.sty
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/oberdiek/bkm-pdftex.def
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/oberdiek/bkm-pdftex.def
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/generic/babel/babel.sty
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/generic/babel/babel.sty
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/generic/babel/switch.def
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/arabi/bblopts.cfg
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/arabi/bblopts.cfg
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/babel-english/english.ldf
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/generic/babel-french/french.ldf
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/babel-spanish/spanish.ldf
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/babel-english/english.ldf
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/babel-english/english.ldf
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/generic/babel/babel.def
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/generic/babel/txtbabel.def
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/generic/babel-french/french.ldf
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/generic/babel-french/french.ldf
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/babel-spanish/spanish.ldf
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/babel-spanish/spanish.ldf
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/babel-portuges/portuges.ldf
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/babel-portuges/portuges.ldf
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/carlisle/scalefnt.sty
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/carlisle/scalefnt.sty
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/enumitem/enumitem.sty
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/enumitem/enumitem.sty
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/tools/calc.sty
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/tools/calc.sty
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/lm/lmodern.sty
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/lm/lmodern.sty
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/base/fontenc.sty
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/base/fontenc.sty
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/base/t1enc.def
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/base/t1enc.def
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/jknappen/ec/ecrm1200.tfm
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/base/inputenc.sty
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/base/inputenc.sty
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/base/utf8.def
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/base/utf8.def
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/base/t1enc.dfu
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/base/t1enc.dfu
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/base/ot1enc.dfu
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/base/ot1enc.dfu
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/base/omsenc.dfu
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/base/omsenc.dfu
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/tools/indentfirst.sty
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/tools/indentfirst.sty
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/graphics/color.sty
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/graphics/color.sty
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/graphics-cfg/color.cfg
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/graphics-cfg/color.cfg
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/graphics-def/pdftex.def
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/graphics-def/pdftex.def
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/graphics/graphicx.sty
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/graphics/graphicx.sty
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/graphics/graphics.sty
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/graphics/graphics.sty
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/graphics/trig.sty
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/graphics/trig.sty
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/graphics-cfg/graphics.cfg
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/graphics-cfg/graphics.cfg
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/microtype/microtype.sty
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/microtype/microtype.sty
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/microtype/microtype-pdftex.def
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/microtype/microtype-pdftex.def
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/microtype/microtype.cfg
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/microtype/microtype.cfg
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/microtype/microtype.cfg
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/tools/multicol.sty
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/tools/multicol.sty
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/multirow/multirow.sty
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/multirow/multirow.sty
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/float/float.sty
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/float/float.sty
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/oberdiek/pdflscape.sty
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/oberdiek/pdflscape.sty
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/graphics/lscape.sty
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/graphics/lscape.sty
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/graphics/rotating.sty
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/graphics/rotating.sty
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/xcolor/xcolor.sty
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/xcolor/xcolor.sty
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/graphics-cfg/color.cfg
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/graphics-cfg/color.cfg
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/listings/listings.sty
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/listings/listings.sty
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/listings/lstmisc.sty
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/listings/lstmisc.sty
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/listings/listings.cfg
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/listings/listings.cfg
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/listings/lstlang1.sty
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/listings/lstlang1.sty
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/listings/lstlang2.sty
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/listings/lstlang2.sty
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/listings/lstlang3.sty
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/listings/lstlang3.sty
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/hyperref/backref.sty
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/hyperref/backref.sty
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/abntex2/abntex2cite.sty
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/abntex2/abntex2cite.sty
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/abntex2/abntex2abrev.sty
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/abntex2/abntex2abrev.sty
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/ltxmisc/relsize.sty
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/ltxmisc/relsize.sty
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/ltxmisc/relsize.sty
+OUTPUT modelo-relatorio-LabAOC.idx
+INPUT modelo-relatorio-LabAOC.aux
+INPUT modelo-relatorio-LabAOC.aux
+OUTPUT modelo-relatorio-LabAOC.aux
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/lm/t1lmr.fd
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/lm/t1lmr.fd
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/lm/ec-lmr12.tfm
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/hyperref/nameref.sty
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/hyperref/nameref.sty
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/generic/oberdiek/gettitlestring.sty
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/generic/oberdiek/gettitlestring.sty
+OUTPUT modelo-relatorio-LabAOC.pdf
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/context/base/supp-pdf.mkii
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/context/base/supp-pdf.mkii
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/oberdiek/epstopdf-base.sty
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/oberdiek/epstopdf-base.sty
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/oberdiek/grfext.sty
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/oberdiek/grfext.sty
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/microtype/mt-cmr.cfg
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/microtype/mt-cmr.cfg
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/lm/t1lmss.fd
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/lm/t1lmss.fd
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/lm/ec-lmss12.tfm
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/lm/ec-lmss12.tfm
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/lm/ec-lmssbx10.tfm
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/lm/ec-lmssbx10.tfm
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/lm/ec-lmr12.tfm
+INPUT C:/Users/leoco/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/lm/ec-lmssbx10.tfm
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/lm/ec-lmssbx10.tfm
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/lm/ot1lmr.fd
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/lm/ot1lmr.fd
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/lm/rm-lmr12.tfm
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/lm/rm-lmr8.tfm
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/lm/rm-lmr6.tfm
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/lm/omllmm.fd
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/lm/omllmm.fd
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/lm/lmmi12.tfm
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/lm/lmmi8.tfm
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/lm/lmmi6.tfm
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/lm/omslmsy.fd
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/lm/omslmsy.fd
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/lm/lmsy10.tfm
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/lm/lmsy8.tfm
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/lm/lmsy6.tfm
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/lm/omxlmex.fd
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/lm/omxlmex.fd
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/lm/lmex10.tfm
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/lm/ec-lmss17.tfm
+INPUT modelo-relatorio-LabAOC.lof
+INPUT modelo-relatorio-LabAOC.lof
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/lm/ec-lmri12.tfm
+INPUT modelo-relatorio-LabAOC.lot
+INPUT modelo-relatorio-LabAOC.lot
+INPUT modelo-relatorio-LabAOC.toc
+INPUT modelo-relatorio-LabAOC.toc
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/lm/ec-lmr10.tfm
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/lm/ec-lmss17.tfm
+INPUT esquematico.png
+INPUT ./esquematico.png
+INPUT ./esquematico.png
+INPUT ./esquematico.png
+INPUT ./esquematico.png
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/lm/ec-lmri10.tfm
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/lm/rm-lmr10.tfm
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/lm/rm-lmr7.tfm
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/lm/rm-lmr5.tfm
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/lm/lmmi10.tfm
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/lm/lmmi7.tfm
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/lm/lmmi5.tfm
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/lm/lmsy10.tfm
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/lm/lmsy7.tfm
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/lm/lmsy5.tfm
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/lm/ec-lmbx10.tfm
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/lm/omslmr.fd
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/lm/omslmr.fd
+INPUT LABAOC.png
+INPUT ./LABAOC.png
+INPUT ./LABAOC.png
+INPUT ./LABAOC.png
+INPUT ./LABAOC.png
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/lm/ec-lmbx12.tfm
+INPUT ../../main.v
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/lm/t1lmtt.fd
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/tex/latex/lm/t1lmtt.fd
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/lm/ec-lmtt12.tfm
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/lm/ec-lmtt8.tfm
+INPUT ../../main.v
+INPUT ../../main.v
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/lm/ec-lmr8.tfm
+INPUT ../../InstructionsMemory/InstructionsMemory.v
+INPUT ../../InstructionsMemory/InstructionsMemory.v
+INPUT ../../InstructionsMemory/InstructionsMemory.v
+INPUT ../../ControlUnit/ControlUnit.v
+INPUT ../../ControlUnit/ControlUnit.v
+INPUT ../../ControlUnit/ControlUnit.v
+INPUT ../../ALU/ALU.v
+INPUT ../../ALU/ALU.v
+INPUT ../../ALU/ALU.v
+INPUT ../../RegistersBank/RegistersBank.v
+INPUT ../../RegistersBank/RegistersBank.v
+INPUT ../../RegistersBank/RegistersBank.v
+INPUT ../../DataMemory/DataMemory.v
+INPUT ../../DataMemory/DataMemory.v
+INPUT ../../DataMemory/DataMemory.v
+INPUT ../../IO/IO.v
+INPUT ../../IO/IO.v
+INPUT ../../IO/IO.v
+INPUT ../../InstructionsMemory/fib.asm
+INPUT ../../InstructionsMemory/fib.asm
+INPUT ../../InstructionsMemory/fib.asm
+INPUT res1.png
+INPUT ./res1.png
+INPUT ./res1.png
+INPUT ./res1.png
+INPUT ./res1.png
+INPUT res2.png
+INPUT ./res2.png
+INPUT ./res2.png
+INPUT ./res2.png
+INPUT ./res2.png
+INPUT res3.png
+INPUT ./res3.png
+INPUT ./res3.png
+INPUT ./res3.png
+INPUT ./res3.png
+INPUT res4.png
+INPUT ./res4.png
+INPUT ./res4.png
+INPUT ./res4.png
+INPUT ./res4.png
+INPUT res5.png
+INPUT ./res5.png
+INPUT ./res5.png
+INPUT ./res5.png
+INPUT ./res5.png
+INPUT modelo-relatorio-LabAOC.bbl
+INPUT modelo-relatorio-LabAOC.bbl
+INPUT modelo-relatorio-LabAOC.brf
+INPUT modelo-relatorio-LabAOC.brf
+INPUT ./modelo-relatorio-LabAOC.brf
+INPUT ./modelo-relatorio-LabAOC.brf
+OUTPUT modelo-relatorio-LabAOC.brf
+INPUT modelo-relatorio-LabAOC.ind
+INPUT modelo-relatorio-LabAOC.ind
+OUTPUT modelo-relatorio-LabAOC.lof
+OUTPUT modelo-relatorio-LabAOC.lot
+OUTPUT modelo-relatorio-LabAOC.toc
+INPUT modelo-relatorio-LabAOC.aux
+INPUT ./modelo-relatorio-LabAOC.brf
+INPUT ./modelo-relatorio-LabAOC.brf
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmbx10.pfb
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmbx10.pfb
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmri10.pfb
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmri10.pfb
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmri12.pfb
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmri12.pfb
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmss12.pfb
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmss12.pfb
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmss17.pfb
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmss17.pfb
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmtt8.pfb
+INPUT C:/Users/leoco/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmtt8.pfb

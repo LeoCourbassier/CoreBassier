@@ -1,32 +1,51 @@
 module PC(  clock,
             halt,
-            intermediate,
+            immediate,
             branchSignal,
-            programCounter
+            programCounter,
+				jump,
+				reset
             );
 
     // Inputs
-    input clock, halt, intermediate, branchSignal;
+    input clock, halt;
+	 input [31:0] immediate;
+	 input branchSignal, jump, reset;
 
     // Temporary
-    reg [9:0]_temp, i, _programCounter;
+    reg [31:0] _temp;
+	 reg [31:0] i;
+	 reg [31:0] _programCounter;
+     reg _halt;
 
     // Outputs
-    output[9:0] programCounter;
+    output[31:0] programCounter;
 
-    initial begin
+    initial 
+    begin
       _programCounter = 0;
+      _halt = 0;
     end
 
     always @ (posedge clock)
     begin
-        if (halt) _programCounter = _programCounter;
+        if (reset == 0)
+        begin
+            _programCounter = 0;
+            _halt = 0;
+        end
+
+        if (halt == 1 || _halt == 1)
+        begin
+            _programCounter = _programCounter;
+            _halt = 1;
+        end
         else
         begin
             _temp = _programCounter + 1'b1;
-            i = _temp + intermediate;
-            if (branchSignal == 0) _programCounter = _temp;
-            else _programCounter = i;
+            i = immediate;
+            if (branchSignal == 1 || jump == 1) _programCounter = i;
+            else _programCounter = _temp;
         end
     end
 

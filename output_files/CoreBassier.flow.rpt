@@ -1,0 +1,137 @@
+Flow report for CoreBassier
+Fri Jul 13 10:08:23 2018
+Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Flow Summary                                                                     ;
++------------------------------------+---------------------------------------------+
+; Flow Status                        ; Successful - Fri Jul 13 10:07:47 2018       ;
+; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
+; Revision Name                      ; CoreBassier                                 ;
+; Top-level Entity Name              ; main                                        ;
+; Family                             ; Cyclone IV E                                ;
+; Device                             ; EP4CE115F29C7                               ;
+; Timing Models                      ; Final                                       ;
+; Total logic elements               ; 5,057 / 114,480 ( 4 % )                     ;
+;     Total combinational functions  ; 5,056 / 114,480 ( 4 % )                     ;
+;     Dedicated logic registers      ; 1,062 / 114,480 ( < 1 % )                   ;
+; Total registers                    ; 1062                                        ;
+; Total pins                         ; 455 / 529 ( 86 % )                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 65,536 / 3,981,312 ( 2 % )                  ;
+; Embedded Multiplier 9-bit elements ; 8 / 532 ( 2 % )                             ;
+; Total PLLs                         ; 0 / 4 ( 0 % )                               ;
++------------------------------------+---------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 07/13/2018 10:06:20 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; CoreBassier         ;
++-------------------+---------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                    ;
++--------------------------------------------+----------------------------------------+--------------------+-------------+------------+
+; Assignment Name                            ; Value                                  ; Default Value      ; Entity Name ; Section Id ;
++--------------------------------------------+----------------------------------------+--------------------+-------------+------------+
+; ALM_REGISTER_PACKING_EFFORT                ; Low                                    ; Medium             ; --          ; --         ;
+; COMPILER_SIGNATURE_ID                      ; 264390070026041.153148717901424        ; --                 ; --          ; --         ;
+; ENABLE_BENEFICIAL_SKEW_OPTIMIZATION        ; Off                                    ; On                 ; --          ; --         ;
+; FINAL_PLACEMENT_OPTIMIZATION               ; Never                                  ; Automatically      ; --          ; --         ;
+; FITTER_AGGRESSIVE_ROUTABILITY_OPTIMIZATION ; Never                                  ; Automatically      ; --          ; --         ;
+; FITTER_EFFORT                              ; Fast Fit                               ; Auto Fit           ; --          ; --         ;
+; MAX_CORE_JUNCTION_TEMP                     ; 85                                     ; --                 ; --          ; --         ;
+; MIN_CORE_JUNCTION_TEMP                     ; 0                                      ; --                 ; --          ; --         ;
+; OPTIMIZE_IOC_REGISTER_PLACEMENT_FOR_TIMING ; Off                                    ; Normal             ; --          ; --         ;
+; OPTIMIZE_TIMING                            ; Off                                    ; Normal compilation ; --          ; --         ;
+; PARTITION_COLOR                            ; -- (Not supported for targeted family) ; --                 ; main        ; Top        ;
+; PARTITION_FITTER_PRESERVATION_LEVEL        ; -- (Not supported for targeted family) ; --                 ; main        ; Top        ;
+; PARTITION_NETLIST_TYPE                     ; -- (Not supported for targeted family) ; --                 ; main        ; Top        ;
+; PHYSICAL_SYNTHESIS_EFFORT                  ; Fast                                   ; Normal             ; --          ; --         ;
+; POWER_BOARD_THERMAL_MODEL                  ; None (CONSERVATIVE)                    ; --                 ; --          ; --         ;
+; POWER_PRESET_COOLING_SOLUTION              ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --                 ; --          ; --         ;
+; PROJECT_OUTPUT_DIRECTORY                   ; output_files                           ; --                 ; --          ; --         ;
+; ROUTER_TIMING_OPTIMIZATION_LEVEL           ; MINIMUM                                ; Normal             ; --          ; --         ;
+; SAVE_DISK_SPACE                            ; Off                                    ; On                 ; --          ; --         ;
+; SMART_RECOMPILE                            ; On                                     ; Off                ; --          ; --         ;
+; TIMEQUEST_MULTICORNER_ANALYSIS             ; Off                                    ; On                 ; --          ; --         ;
+; TOP_LEVEL_ENTITY                           ; main                                   ; CoreBassier        ; --          ; --         ;
++--------------------------------------------+----------------------------------------+--------------------+-------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                             ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis      ; 00:00:38     ; 1.0                     ; 4818 MB             ; 00:01:00                           ;
+; Fitter                    ; 00:00:38     ; 1.0                     ; 5432 MB             ; 00:00:50                           ;
+; Assembler                 ; 00:00:05     ; 1.0                     ; 4719 MB             ; 00:00:05                           ;
+; TimeQuest Timing Analyzer ; 00:00:35     ; 1.0                     ; 4908 MB             ; 00:00:35                           ;
+; Total                     ; 00:01:56     ; --                      ; --                  ; 00:02:30                           ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++-----------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                         ;
++---------------------------+------------------+------------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
++---------------------------+------------------+------------+------------+----------------+
+; Analysis & Synthesis      ; DESKTOP-D90MUUK  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter                    ; DESKTOP-D90MUUK  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler                 ; DESKTOP-D90MUUK  ; Windows 10 ; 10.0       ; x86_64         ;
+; TimeQuest Timing Analyzer ; DESKTOP-D90MUUK  ; Windows 10 ; 10.0       ; x86_64         ;
++---------------------------+------------------+------------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off CoreBassier -c CoreBassier
+quartus_fit --read_settings_files=off --write_settings_files=off CoreBassier -c CoreBassier
+quartus_asm --read_settings_files=off --write_settings_files=off CoreBassier -c CoreBassier
+quartus_sta CoreBassier -c CoreBassier
+
+
+

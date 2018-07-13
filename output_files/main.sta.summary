@@ -2,76 +2,112 @@
 TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow 1200mV 85C Model Setup 'InstructionsMemory:instructionsMemory|q[27]'
-Slack : -107.645
-TNS   : -1764.463
+Type  : Slow 1200mV 85C Model Setup 'InstructionsMemory:instructionsMemory|altsyncram:ram_rtl_0|altsyncram_m081:auto_generated|ram_block1a0~porta_address_reg0'
+Slack : -123.391
+TNS   : -5518.738
+
+Type  : Slow 1200mV 85C Model Setup 'FrequencyDivider:div|clockOut'
+Slack : -18.276
+TNS   : -9627.284
 
 Type  : Slow 1200mV 85C Model Setup 'clock'
-Slack : -8.069
-TNS   : -441.773
+Slack : -10.677
+TNS   : -84.739
 
-Type  : Slow 1200mV 85C Model Hold 'InstructionsMemory:instructionsMemory|q[27]'
-Slack : -0.052
-TNS   : -0.059
+Type  : Slow 1200mV 85C Model Hold 'InstructionsMemory:instructionsMemory|altsyncram:ram_rtl_0|altsyncram_m081:auto_generated|ram_block1a0~porta_address_reg0'
+Slack : -4.454
+TNS   : -157.193
 
 Type  : Slow 1200mV 85C Model Hold 'clock'
 Slack : 0.356
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clock'
-Slack : -3.000
-TNS   : -197.784
-
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'InstructionsMemory:instructionsMemory|q[27]'
-Slack : 0.378
+Type  : Slow 1200mV 85C Model Hold 'FrequencyDivider:div|clockOut'
+Slack : 0.357
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Setup 'InstructionsMemory:instructionsMemory|q[27]'
-Slack : -96.025
-TNS   : -1577.286
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clock'
+Slack : -3.000
+TNS   : -34.088
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'FrequencyDivider:div|clockOut'
+Slack : -2.174
+TNS   : -1045.870
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'InstructionsMemory:instructionsMemory|altsyncram:ram_rtl_0|altsyncram_m081:auto_generated|ram_block1a0~porta_address_reg0'
+Slack : -2.059
+TNS   : -989.687
+
+Type  : Slow 1200mV 0C Model Setup 'InstructionsMemory:instructionsMemory|altsyncram:ram_rtl_0|altsyncram_m081:auto_generated|ram_block1a0~porta_address_reg0'
+Slack : -110.060
+TNS   : -4938.919
+
+Type  : Slow 1200mV 0C Model Setup 'FrequencyDivider:div|clockOut'
+Slack : -16.378
+TNS   : -8549.870
 
 Type  : Slow 1200mV 0C Model Setup 'clock'
-Slack : -7.196
-TNS   : -388.564
+Slack : -9.498
+TNS   : -74.729
 
-Type  : Slow 1200mV 0C Model Hold 'InstructionsMemory:instructionsMemory|q[27]'
-Slack : -0.061
-TNS   : -0.061
+Type  : Slow 1200mV 0C Model Hold 'InstructionsMemory:instructionsMemory|altsyncram:ram_rtl_0|altsyncram_m081:auto_generated|ram_block1a0~porta_address_reg0'
+Slack : -3.874
+TNS   : -132.450
 
 Type  : Slow 1200mV 0C Model Hold 'clock'
 Slack : 0.311
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clock'
-Slack : -3.000
-TNS   : -197.784
-
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'InstructionsMemory:instructionsMemory|q[27]'
-Slack : 0.430
+Type  : Slow 1200mV 0C Model Hold 'FrequencyDivider:div|clockOut'
+Slack : 0.312
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Setup 'InstructionsMemory:instructionsMemory|q[27]'
-Slack : -60.761
-TNS   : -982.208
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clock'
+Slack : -3.000
+TNS   : -34.088
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'FrequencyDivider:div|clockOut'
+Slack : -2.174
+TNS   : -1045.870
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'InstructionsMemory:instructionsMemory|altsyncram:ram_rtl_0|altsyncram_m081:auto_generated|ram_block1a0~porta_address_reg0'
+Slack : -1.643
+TNS   : -837.151
+
+Type  : Fast 1200mV 0C Model Setup 'InstructionsMemory:instructionsMemory|altsyncram:ram_rtl_0|altsyncram_m081:auto_generated|ram_block1a0~porta_address_reg0'
+Slack : -70.692
+TNS   : -3164.071
+
+Type  : Fast 1200mV 0C Model Setup 'FrequencyDivider:div|clockOut'
+Slack : -10.238
+TNS   : -5199.957
 
 Type  : Fast 1200mV 0C Model Setup 'clock'
-Slack : -3.987
-TNS   : -194.640
+Slack : -5.762
+TNS   : -41.847
 
-Type  : Fast 1200mV 0C Model Hold 'InstructionsMemory:instructionsMemory|q[27]'
-Slack : -0.073
-TNS   : -0.197
+Type  : Fast 1200mV 0C Model Hold 'InstructionsMemory:instructionsMemory|altsyncram:ram_rtl_0|altsyncram_m081:auto_generated|ram_block1a0~porta_address_reg0'
+Slack : -2.744
+TNS   : -104.110
 
 Type  : Fast 1200mV 0C Model Hold 'clock'
-Slack : 0.184
+Slack : 0.173
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'FrequencyDivider:div|clockOut'
+Slack : 0.187
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clock'
 Slack : -3.000
-TNS   : -192.998
+TNS   : -21.846
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'InstructionsMemory:instructionsMemory|q[27]'
-Slack : 0.292
-TNS   : 0.000
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'InstructionsMemory:instructionsMemory|altsyncram:ram_rtl_0|altsyncram_m081:auto_generated|ram_block1a0~porta_address_reg0'
+Slack : -1.222
+TNS   : -398.321
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'FrequencyDivider:div|clockOut'
+Slack : -1.000
+TNS   : -1040.000
 
 ------------------------------------------------------------

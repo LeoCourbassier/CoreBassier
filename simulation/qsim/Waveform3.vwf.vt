@@ -18,7 +18,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "05/10/2018 14:30:23"
+// Generated on "06/14/2018 14:33:07"
                                                                                 
 // Verilog Test Bench (with test vectors) for design :                          main
 // 
@@ -154,140 +154,8 @@ end
 always
 begin
 	clock = 1'b0;
-	clock = #50000 1'b1;
-	#50000;
-end 
-
-// key0
-initial
-begin
-	key0 = 1'b0;
-end 
-
-// key1
-initial
-begin
-	key1 = 1'b0;
-end 
-
-// key2
-initial
-begin
-	key2 = 1'b0;
-end 
-
-// key3
-initial
-begin
-	key3 = 1'b0;
-end 
-
-// sw0
-initial
-begin
-	sw0 = 1'b0;
-end 
-
-// sw1
-initial
-begin
-	sw1 = 1'b0;
-end 
-
-// sw2
-initial
-begin
-	sw2 = 1'b0;
-end 
-
-// sw3
-initial
-begin
-	sw3 = 1'b0;
-end 
-
-// sw4
-initial
-begin
-	sw4 = 1'b0;
-end 
-
-// sw5
-initial
-begin
-	sw5 = 1'b0;
-end 
-
-// sw6
-initial
-begin
-	sw6 = 1'b0;
-end 
-
-// sw7
-initial
-begin
-	sw7 = 1'b0;
-end 
-
-// sw8
-initial
-begin
-	sw8 = 1'b0;
-end 
-
-// sw9
-initial
-begin
-	sw9 = 1'b0;
-end 
-
-// sw10
-initial
-begin
-	sw10 = 1'b0;
-end 
-
-// sw11
-initial
-begin
-	sw11 = 1'b0;
-end 
-
-// sw12
-initial
-begin
-	sw12 = 1'b0;
-end 
-
-// sw13
-initial
-begin
-	sw13 = 1'b0;
-end 
-
-// sw14
-initial
-begin
-	sw14 = 1'b0;
-end 
-
-// sw15
-initial
-begin
-	sw15 = 1'b0;
-end 
-
-// sw16
-initial
-begin
-	sw16 = 1'b0;
-end 
-
-// sw17
-initial
-begin
-	sw17 = 1'b0;
+	clock = #25000 1'b1;
+	#25000;
 end 
 endmodule
 

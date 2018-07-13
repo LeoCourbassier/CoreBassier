@@ -1,0 +1,41 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Setup 'InstructionsMemory:instructionsMemory|altsyncram:ram_rtl_0|altsyncram_3o81:auto_generated|ram_block1a0~porta_address_reg0'
+Slack : -156.203
+TNS   : -7014.235
+
+Type  : Setup 'divfreq:div|clockOut'
+Slack : -34.002
+TNS   : -23242.565
+
+Type  : Setup 'clock'
+Slack : -18.260
+TNS   : -147.503
+
+Type  : Hold 'InstructionsMemory:instructionsMemory|altsyncram:ram_rtl_0|altsyncram_3o81:auto_generated|ram_block1a0~porta_address_reg0'
+Slack : -16.245
+TNS   : -962.079
+
+Type  : Hold 'clock'
+Slack : -2.848
+TNS   : -2.848
+
+Type  : Hold 'divfreq:div|clockOut'
+Slack : 0.404
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'InstructionsMemory:instructionsMemory|altsyncram:ram_rtl_0|altsyncram_3o81:auto_generated|ram_block1a0~porta_address_reg0'
+Slack : -8.076
+TNS   : -3742.196
+
+Type  : Minimum Pulse Width 'clock'
+Slack : -3.000
+TNS   : -41.741
+
+Type  : Minimum Pulse Width 'divfreq:div|clockOut'
+Slack : -2.693
+TNS   : -1369.017
+
+------------------------------------------------------------
